@@ -25,10 +25,10 @@ pipeline {
         stage('deploy k8 files') {
             steps {
                 
-              sh """
+              sh '''
               cd $WORKDIR
               kubectl apply -f deploy.yaml
-              ""
+              '''
                 
             }
         }
