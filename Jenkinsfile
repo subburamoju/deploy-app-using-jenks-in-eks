@@ -9,7 +9,7 @@ pipeline {
         }
         stage('connect k8') {
             steps {
-                sh """
+                sh '''
                   kubectl get nodes
                   if [ $? == 0 ]{
                     echo "sucessfully connected to cluster"
@@ -19,7 +19,7 @@ pipeline {
                    exit 1
                   }
                   
-                """
+                '''
             }
         }
         stage('deploy k8 files') {
