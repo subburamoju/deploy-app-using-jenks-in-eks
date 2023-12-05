@@ -42,7 +42,7 @@ pipeline {
                  #then
                  #{
                  #  echo "sucessfully connected to cluster"
-                  3}
+                  #}
                   #else{
                    #echo "unable to connect to cluster"
                    #exit 1
