@@ -12,7 +12,9 @@ pipeline {
             steps {
                 sh '''
                   kubectl get nodes
-                  if [ $? == 0 ]{
+                  if [ $? == 0 ]
+                  then
+                  {
                     echo "sucessfully connected to cluster"
                   }
                   else{
@@ -37,7 +39,9 @@ pipeline {
             steps {
                 sh '''
                  kubectl get po
-                 if [ $? == 0 ]{
+                 if [ $? == 0 ]
+                 then
+                 {
                     echo "sucessfully connected to cluster"
                   }
                   else{
