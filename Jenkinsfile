@@ -29,8 +29,7 @@ pipeline {
             steps {
                 
               sh '''
-              cd $WORKDIR
-              kubectl apply -f deploy.yaml
+                          kubectl apply -f $WORKSPACE/deploy.yaml
               '''
                 
             }
