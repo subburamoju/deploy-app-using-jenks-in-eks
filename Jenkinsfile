@@ -12,15 +12,15 @@ pipeline {
             steps {
                 sh '''
                   kubectl get nodes
-                  if [ $? == 0 ]
-                  then
-                  {
-                    echo "sucessfully connected to cluster"
-                  }
-                  else{
-                   echo "unable to connect to cluster"
-                   exit 1
-                  }
+                  #if [ $? == 0 ]
+                  #then
+                  #{
+                   # echo "sucessfully connected to cluster"
+                  #}
+                  #else{
+                  # echo "unable to connect to cluster"
+                   #exit 1
+                  #}
                   
                 '''
             }
@@ -39,15 +39,15 @@ pipeline {
             steps {
                 sh '''
                  kubectl get po
-                 if [ $? == 0 ]
-                 then
-                 {
-                    echo "sucessfully connected to cluster"
-                  }
-                  else{
-                   echo "unable to connect to cluster"
-                   exit 1
-                  }
+                 #if [ $? == 0 ]
+                 #then
+                 #{
+                 #  echo "sucessfully connected to cluster"
+                  3}
+                  #else{
+                   #echo "unable to connect to cluster"
+                   #exit 1
+                  #}
                 '''
             }
         }
