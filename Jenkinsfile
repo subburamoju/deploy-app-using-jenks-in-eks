@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('select k8') {
             steps {
-              sh 'kubectl config use-context arn:aws:eks:us-east-1:449203461473:cluster/devops17-eks-yNMReMjp'    
+              sh 'kubectl config use-context arn:aws:eks:us-east-1:449203461473:cluster/devops17-eks-gy2tck9g'    
             
         }
         }
